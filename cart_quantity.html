@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Cart_Quantity
+        </title>
+    </head>
+    <body>
+        <button onclick=" alert(`cartQuantity is ${Cart_Quantity}`)">
+            CartQuantity
+        </button>
+        <button onclick=" if((Cart_Quantity+1)>10){
+            alert(`cartquantity is above 10 and itis full`)
+        }
+        else {Cart_Quantity=Cart_Quantity+1;
+            alert(`cartQuantity is ${Cart_Quantity}`)
+
+        }  ">
+            Add to cart
+        </button>
+        <button onclick="
+        if((Cart_Quantity+2)>10){
+            alert(`cartquantity is above 10 and itis full`)
+        }
+        else {Cart_Quantity=Cart_Quantity+2;
+            alert(`cartQuantity is ${Cart_Quantity}`)
+
+        } 
+        
+         ">
+            +2
+        </button>
+        <button onclick="if((Cart_Quantity+3)>10){
+            alert(`cartquantity is above 10 and itis full`)
+        }
+        else {Cart_Quantity=Cart_Quantity+3;
+            alert(`cartQuantity is ${Cart_Quantity}`)
+
+        } ">
+            +3
+        </button>
+        <button onclick="if((Cart_Quantity+4)>10){
+            alert(`cartquantity is above 10 and itis full`)
+        }
+        else {Cart_Quantity=Cart_Quantity+4;
+            alert(`cartQuantity is ${Cart_Quantity}`)
+
+        }  ">
+            +4
+        </button>
+        <button onclick="if((Cart_Quantity+5)>10){
+            alert(`cartquantity is above 10 and itis full`)
+        }
+        else {Cart_Quantity=Cart_Quantity+5;
+            alert(`cartQuantity is ${Cart_Quantity}`)
+
+        }  ">
+            +5
+        </button>
+        <button onclick="Cart_Quantity--; alert(`cartQuantity is ${Cart_Quantity}`)">
+            Remove form cart
+        </button>
+        <button onclick="Cart_Quantity=0; alert(`cartQuantity is ${Cart_Quantity}`)">
+            Reset
+        </button>
+      
+        
+
+
+
+        <script>
+            let Cart_Quantity=0;
+            let name='pavanteja';
+            alert(`my name is ${name}`);
+            cost=5+3+9;
+            alert(`total cost before tax is ${cost}`);
+            alert(`total cosr after 10% tax is ${(cost*0.1)+cost}`);
+            
+
+    
+
+            
+       
+        </script>
+    </body>
+    
+</html>
