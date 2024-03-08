@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <button class="js-butt" onclick=" butc()">
+            9a
+        </button>
+        <button class="butt2" onclick="but2()">
+            9b
+        </button>
+        <button class="js-hc" onclick="heads()">
+            Heads
+        </button>
+        <button onclick="tails()">
+            Tails
+        </button>
+        <p class="display">
+
+        </p>
+
+        <input placeholder="Enter your name" class="js-input_p" onkeydown="ent(event)">
+        <button onclick="dis()">
+            submit
+        </button>
+        <p class="js-dis2">
+
+        </p>
+
+        <script>
+            function ent(event){
+                if(event.key==='Enter'){
+                    dis();
+                }
+            }
+            function dis(){
+                const v3=document.querySelector('.js-input_p');
+                console.log(v3.value);
+                document.querySelector('.js-dis2').innerHTML= `your name is ${v3.value}`;
+
+            }
+            function tails(){
+                document.querySelector('.display').innerHTML='You selected Tails';
+
+            }
+            function heads(){
+                
+                document.querySelector('.display').innerHTML='You selected Heads';
+
+
+            }
+            function but2()
+            {
+               const v2= document.querySelector('.butt2');
+                if(v2.innerText==='9b')
+                {
+                v2.innerHTML='9bdone';
+               }
+               else{
+                v2.innerHTML='9b';
+               }
+            }
+            
+            function butc(){
+            const but=document.querySelector('.js-butt');
+            console.log(but);}
+
+        </script>
+    </body>
+</html>
